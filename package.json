@@ -1,12 +1,24 @@
 {
-  "name": "astronomer-mongo-schema",
+  "name": "@astronomerio/mongo-schema",
   "version": "1.0.0",
   "description": "Mongoose Schema Definitions and Migration Utilities",
-  "main": "dist/index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^4.7.8"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint lib",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
