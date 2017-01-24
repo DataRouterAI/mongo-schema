@@ -1,0 +1,21 @@
+{
+  "name": "astronomer-mongo-schema",
+  "version": "1.0.0",
+  "description": "Mongoose Schema Definitions and Migration Utilities",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astronomerio/astronomer-mongo-schema.git"
+  },
+  "author": "Mike Perry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astronomerio/astronomer-mongo-schema/issues"
+  },
+  "homepage": "https://github.com/astronomerio/astronomer-mongo-schema#readme"
+}
