@@ -13,7 +13,7 @@ describe('buildSchema', function () {
         });
     });
 
-    it('creates schemas on given connection', function () {
+    it('creates models on given connection', function () {
         Object.keys(models).forEach(key => {
             assert(models[key].db === mongoose.connection, 'Models should be created on the given mongoose connection');
         });
