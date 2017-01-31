@@ -10,7 +10,8 @@ object.
 ### Native Node.js
 ```javascript
 const mongoose = require('mongoose');
-const Models = require('@astronomerio/datarouter-mongo')(mongoose);
+mongoose.connect('mongodb://mongo/test');
+const Models = require('@astronomerio/datarouter-mongo')(mongoose.connection.model.bind(mongoose.connection)));
 
 const user = new Models.User();
 user.save();
@@ -19,7 +20,8 @@ user.save();
 ## ES6 (Babel)
 ```javascript
 import mongoose from 'mongoose';
+mongoose.connect('mongodb://mongo/test');
 import createModels from '@astronomerio/datarouter-mongo';
-const { User, Application } = createModels(mongoose);
+const { User, Application } = createModels(mongoose.connection.model.bind(mongoose.connection)));
 
 ```
