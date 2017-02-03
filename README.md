@@ -1,27 +1,29 @@
 # DataRouter Mongo
-Mongoose models used within DataRouter exported as a single module.
+Mongoose Schemas used within DataRouter exported as a single module.
 
 # Usage
 Mongoose models must be created on the proper mongoose instance.
-Therefore, this module exports a single named function (`createModels`) that
-accepts a mongoose instance. Models are then built and returned on a single
-object.
+Therefore, this module only exports the schemas. It's left to you
+to compile these schemas as mongoose models.
 
 ### Native Node.js
 ```javascript
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://mongo/test');
-const Models = require('@astronomerio/datarouter-mongo')(mongoose.connection.model.bind(mongoose.connection)));
+const schemas = require('@astronomerio/datarouter-mongo');
+const User = mongoose.model('User', schemas.UserSchema, 'users');
 
-const user = new Models.User();
+const user = new User();
 user.save();
 ```
 
 ## ES6 (Babel)
 ```javascript
 import mongoose from 'mongoose';
-mongoose.connect('mongodb://mongo/test');
-import createModels from '@astronomerio/datarouter-mongo';
-const { User, Application } = createModels(mongoose.connection.model.bind(mongoose.connection)));
+import { UserSchema, ApplicationSchema } from '@astronomerio/datarouter-mongo';
+
+const User = mongoose.model('User', UserSchema, 'users');
+
+const user = new User();
+user.save();
 
 ```
