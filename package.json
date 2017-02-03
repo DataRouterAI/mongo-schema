@@ -1,5 +1,5 @@
 {
-  "name": "@astronomerio/datarouter-mongo",
+  "name": "@datarouterai/mongo-schema",
   "version": "1.0.0",
   "description": "Mongoose Schema Definitions for DataRouter",
   "main": "index.js",
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/astronomerio/datarouter-mongo.git"
+    "url": "git+https://github.com/datarouterai/mongo-schema.git"
   },
   "author": "Mike Perry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/astronomerio/datarouter-mongo/issues"
+    "url": "https://github.com/datarouterai/mongo-schema/issues"
   },
-  "homepage": "https://github.com/astronomerio/datarouter-mongo#readme"
+  "homepage": "https://github.com/datarouterai/mongo-schema#readme"
 }

@@ -9,8 +9,8 @@ to compile these schemas as mongoose models.
 ### Native Node.js
 ```javascript
 const mongoose = require('mongoose');
-const schemas = require('@astronomerio/datarouter-mongo');
-const User = mongoose.model('User', schemas.UserSchema, 'users');
+const { UserSchema, ApplicationSchema } = require('@datarouterai/mongo-schema');
+const User = mongoose.model('User', UserSchema, 'users');
 
 const user = new User();
 user.save();
@@ -19,7 +19,7 @@ user.save();
 ## ES6 (Babel)
 ```javascript
 import mongoose from 'mongoose';
-import { UserSchema, ApplicationSchema } from '@astronomerio/datarouter-mongo';
+import { UserSchema, ApplicationSchema } from '@datarouterai/mongo-schema';
 
 const User = mongoose.model('User', UserSchema, 'users');
 
