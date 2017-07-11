@@ -1,5 +1,5 @@
 {
-  "name": "@datarouterai/mongo-schema",
+  "name": "@astronomerio/mongo-schema",
   "version": "1.0.0",
   "description": "Mongoose Schema Definitions for DataRouter",
   "main": "index.js",
