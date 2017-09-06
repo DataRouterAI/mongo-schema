@@ -15,6 +15,7 @@ describe('buildSchema', function () {
             'UserSchema',
             'WebhookConfigSchema',
             'WorkflowConfigSchema',
+            'PlanSchema',
         ]);
         Object.keys(schemas).forEach(schema => assert(expectedSchemas.has(schema)));
     });
