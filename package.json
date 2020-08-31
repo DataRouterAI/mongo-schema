@@ -4,7 +4,7 @@
   "description": "Mongoose Schema Definitions for DataRouter",
   "main": "index.js",
   "dependencies": {
-    "mongoose": "^4.7.8"
+    "mongoose": "^5.10.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
